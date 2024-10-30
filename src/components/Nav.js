@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import netflixLogo from '../Netflix_logo.svg';
-import netflixAvatar from '../Netflix-avatar.png';
 import './Nav.css';
 
 function Nav(){
@@ -20,8 +18,8 @@ function Nav(){
     },[])
 
     return <div className={`nav ${showNav && "nav--black"}`}>
-        <img src={netflixLogo} className="nav__img" alt="Netflix Logo"/>
-        <img src={netflixAvatar} className="nav__avatar" alt="Neflix Avatar"/>
+        <img src='/Netflix-logo.png'className="nav__img" alt="Netflix Logo"/>
+        <img src='/Netflix-avatar.png' className="nav__avatar" alt="Neflix Avatar"/>
     </div>
 }
 
